@@ -4,6 +4,9 @@ from PIL import Image
 from rembg import remove
 import io
 
+def main(request):
+    return render(request,"Main.html")
+
 def remove_bg(request):
     if request.method == "POST" and request.FILES.get("image"):
         input_data = request.FILES["image"].read()

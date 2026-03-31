@@ -27,5 +27,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('remove/', views.remove_bg, name='remove_bg'),
     path('gray/',views.gray,name='gray'),
+    path('',views.main,name='main'),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

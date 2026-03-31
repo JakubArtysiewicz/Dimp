@@ -48,6 +48,11 @@ input[type="file"] {
     margin: 15px 0;
 }
 
+.itdh1 {
+    color: aliceblue;
+    text-decoration: none;
+}
+
 button {
     background: #22c55e;
     border: none;
