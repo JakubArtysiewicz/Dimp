@@ -25,6 +25,7 @@ import remove_bg
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('remove/', views.upload_image, name='remove_bg'),
+    path('remove/', views.remove_bg, name='remove_bg'),
+    path('gray/',views.gray,name='gray'),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
